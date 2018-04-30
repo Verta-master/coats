@@ -10,22 +10,26 @@
 <body>
   <header class="header">
     <div class="wrapper-main">
-      <nav class="menu">
-        <button class="menu__btn"><span class="visually-hidden">Menu</span></button>
-        <ul class="menu__list">
-          
-        </ul>
-      </nav>
+      <div class="header__wrap">
+        <nav class="menu">
+          <button class="menu__btn"><span class="visually-hidden">Menu</span></button>
+          <ul class="menu__list">
 
-      <div class="logo">Логотип</div>
+          </ul>
+        </nav>
+      </div>
 
-      <div class="header__block">
+      <div class="header__wrap">
+        <div class="logo">Логотип</div>
+      </div>
+
+      <div class="header__wrap header__wrap--user">
         <div class="like">
-          <img src="img/like-white.svg" alt="Like" width="52" height="52">
+          <a href="#"><img src="img/like-white.svg" alt="Like" width="52" height="52"></a>
           <span>5</span>
         </div>
         <div class="cart">
-          <img src="img/bag-white.svg" alt="Buy" width="40" height="55">
+          <a href="#"><img src="img/bag-white.svg" alt="Buy" width="40" height="55"></a>
           <span>7</span>
         </div>
       </div>
@@ -85,7 +89,7 @@
                 <p class="subscribe__title">Узнайте первыми о новинках и скидках</p>
                 <input type="email" name="email" id="email" class="subscribe__input" placeholder="укажите e-mail">
                 <label for="email">Необходимо заполнить «Email».</label>
-                <button type="submit" class="subscribe__link">подписаться</button>
+                <button type="submit" class="slider__link subscribe__btn">подписаться</button>
                 <p>Нажимая на кнопку «Подписаться», я соглашаюсь на обработку моих персональных данных и ознакомлен(а) с <a href="#">условиями конфиденциальности</a>.</p>
               </form>
             </div>
@@ -97,27 +101,28 @@
   
   <footer class="footer">
     <div class="wrapper-main">
-      <div class="footer__block">
-        <div class="footer__wrap">
+      <div class="footer__wrap footer__wrap--user">
+        <a href="#" class="footer__block">
           <img src="img/earth-globe-white.svg" alt="English version" width="45" height="45">
           <p>English version</p>
-        </div>
-        <div class="footer__wrap">
+        </a>
+        <a href="#" class="footer__block">
           <img src="img/chat-white.svg" alt="Отзывы" width="45" height="45">
           <p>Отзывы</p>
-        </div>
+        </a>
       </div>
-      <div class="footer__block">
+      <div class="footer__wrap">
         <a href="#" class="footer__social" title="Instagram">
-          <img src="img/icon-instagram.svg" alt="Instagram" width="45" height="45">
+          <img src="img/icon-instagram.png" alt="Instagram" width="68" height="68">
         </a>
-        <a href="#" class="footer__social" title="VKontakte">
-          <img src="img/icon-vk.svg" alt="VKontakte" width="45" height="45">
+        <a href="#" class="footer__social" title="Instagram">
+          <img src="img/icon-instagram.png" alt="Instagram" width="68" height="68">
         </a>
-        <a href="#" class="footer__social" title="Odnoklassniki">
-          <img src="img/icon-ok.svg" alt="Odnoklassniki" width="45" height="45">
+        <a href="#" class="footer__social" title="Instagram">
+          <img src="img/icon-instagram.png" alt="Instagram" width="68" height="68">
         </a>
       </div>
+      <div class="footer__wrap"></div>
     </div>
   </footer>
   
@@ -131,6 +136,10 @@
       pagination: {
         el: '.slider__pagination',
         clickable: true,
+      },
+      mousewheel: {
+        forceToAxis: true,
+        invert: true,
       },
       preventClicks: false,
       preventClicksPropagation: false,
