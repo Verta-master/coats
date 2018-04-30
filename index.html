@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta  name="viewport" content="width=device-width,initial-scale=1">
+  <title>Title</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.2/css/swiper.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  <header class="header">
+    <div class="wrapper-main">
+      <nav class="menu">
+        <button class="menu__btn"><span class="visually-hidden">Menu</span></button>
+        <ul class="menu__list">
+          
+        </ul>
+      </nav>
+
+      <div class="logo">Логотип</div>
+
+      <div class="header__block">
+        <div class="like">
+          <img src="img/like-white.svg" alt="Like" width="52" height="52">
+          <span>5</span>
+        </div>
+        <div class="cart">
+          <img src="img/bag-white.svg" alt="Buy" width="40" height="55">
+          <span>7</span>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+  <main>
+    <div class="swiper-container slider">
+        <ul class="swiper-wrapper">
+          <li class="swiper-slide slider__slide">
+            <figure class="slider__img">
+              <img src="img/img-1.jpg" alt="Купить шубу" width="640" height="1080">
+            </figure>
+            <figure class="slider__img">
+              <img src="img/img-2.jpg" alt="Купить шубу" width="640" height="1080">
+            </figure>
+            <figure class="slider__img">
+              <img src="img/img-3.jpg" alt="Купить шубу" width="640" height="1080">
+            </figure>
+            <div class="slider__info">
+              <a href="#" class="slider__link">новинки</a>
+            </div>
+          </li>
+          <li class="swiper-slide slider__slide">
+            <div class="slider__info">
+              <p class="slider__title">Распродажа</p>
+              <a href="#" class="slider__link">Начать покупки</a>
+              <p class="slider__comment">до 50%</p>
+            </div>
+          </li>
+          <li class="swiper-slide slider__slide">
+            <figure class="slider__img">
+              <img src="img/img-4.jpg" alt="Купить шубу" width="640" height="1080">
+            </figure>
+            <figure class="slider__img">
+              <img src="img/img-5.jpg" alt="Купить шубу" width="640" height="1080">
+            </figure>
+            <figure class="slider__img">
+              <img src="img/img-6.jpg" alt="Купить шубу" width="640" height="1080">
+            </figure>
+            <div class="slider__info">
+              <a href="#" class="slider__link">новинки</a>
+            </div>
+          </li>
+          <li class="swiper-slide slider__slide">
+            <figure class="slider__img">
+              <img src="img/img-7.jpg" alt="Купить шубу" width="640" height="1080">
+            </figure>
+            <figure class="slider__img">
+              <img src="img/img-8.jpg" alt="Купить шубу" width="640" height="1080">
+            </figure>
+            <figure class="slider__img">
+              <img src="img/img-9.jpg" alt="Купить шубу" width="640" height="1080">
+            </figure>
+            <div class="slider__info">
+              <form action="#" method="post" class="subscribe">
+                <p class="subscribe__title">Узнайте первыми о новинках и скидках</p>
+                <input type="email" name="email" id="email" class="subscribe__input" placeholder="укажите e-mail">
+                <label for="email">Необходимо заполнить «Email».</label>
+                <button type="submit" class="subscribe__link">подписаться</button>
+                <p>Нажимая на кнопку «Подписаться», я соглашаюсь на обработку моих персональных данных и ознакомлен(а) с <a href="#">условиями конфиденциальности</a>.</p>
+              </form>
+            </div>
+          </li>
+        </ul>
+      <div class="swiper-pagination slider__pagination"></div>
+    </div>
+  </main>
+  
+  <footer class="footer">
+    <div class="wrapper-main">
+      <div class="footer__block">
+        <div class="footer__wrap">
+          <img src="img/earth-globe-white.svg" alt="English version" width="45" height="45">
+          <p>English version</p>
+        </div>
+        <div class="footer__wrap">
+          <img src="img/chat-white.svg" alt="Отзывы" width="45" height="45">
+          <p>Отзывы</p>
+        </div>
+      </div>
+      <div class="footer__block">
+        <a href="#" class="footer__social" title="Instagram">
+          <img src="img/icon-instagram.svg" alt="Instagram" width="45" height="45">
+        </a>
+        <a href="#" class="footer__social" title="VKontakte">
+          <img src="img/icon-vk.svg" alt="VKontakte" width="45" height="45">
+        </a>
+        <a href="#" class="footer__social" title="Odnoklassniki">
+          <img src="img/icon-ok.svg" alt="Odnoklassniki" width="45" height="45">
+        </a>
+      </div>
+    </div>
+  </footer>
+  
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.2/js/swiper.min.js"></script>
+  
+  <!-- Sliders -->
+  <script>
+    var mySwiper = new Swiper ('.slider', {
+      direction: 'vertical',
+      pagination: {
+        el: '.slider__pagination',
+        clickable: true,
+      },
+      preventClicks: false,
+      preventClicksPropagation: false,
+    });
+  </script>
+</body>
+</html>
