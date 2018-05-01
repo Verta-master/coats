@@ -1,0 +1,31 @@
+.sidebar {
+  width: 280px;
+  padding-left: 20px;
+  position: fixed;
+  top: 260px;
+  left: 60px;
+  z-index: 50;
+}
+
+.sidebar__item {
+  margin-bottom: 15px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #222222;
+  
+  span {
+    text-transform: uppercase;
+  }
+}
+
+.sidebar__link {
+  color: #222222;
+  transition: ease-out 0.3s;
+  
+  &:hover,
+  &:active,
+  &--active {
+    color: @green;
+    transition: ease-out 0.3s;
+  }
+}
