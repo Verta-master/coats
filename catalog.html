@@ -117,8 +117,8 @@
   
   <main>
     <nav class="sidebar">
+      <p class="sidebar__item sidebar__btn">КАТАЛОГ</p>
       <ul class="sidebar__list">
-        <li class="sidebar__item"><span>КАТАЛОГ</span></li>
         <li class="sidebar__item">
           <a href="#" class="sidebar__link">Верхняя одежда</a>
         </li>
@@ -442,8 +442,10 @@
         <div class="footer-basic__column footer-basic__column--form">
           <form action="#" method="post" class="footer-basic__form">
             <p class="footer-basic__title">Узнайте первыми о новинках и скидках</p>
-            <input type="email" name="email" class="footer-basic__input" placeholder="укажите e-mail">
-            <button type="submit" class="btn footer-basic__btn">подписаться</button>
+            <div class="footer-basic__wrap">
+              <input type="email" name="email" class="footer-basic__input" placeholder="укажите e-mail">
+              <button type="submit" class="btn footer-basic__btn">подписаться</button>
+            </div>
             <p>Нажимая на кнопку «Подписаться», я соглашаюсь на обработку моих персональных данных и ознакомлен(а) с <a href="#">условиями конфиденциальности</a>.</p>
           </form>
         </div>
@@ -458,7 +460,7 @@
           <img src="img/earth-globe.svg" alt="English version" width="45" height="45">
           <p>English version</p>
         </a>
-        <a href="#" class="footer__block">
+        <a href="#" class="footer__block footer__block--review">
           <img src="img/chat.svg" alt="Отзывы" width="45" height="45">
           <p>Отзывы</p>
         </a>
@@ -501,6 +503,15 @@
     $("#amount").val( "Цена " + $("#slider-range").slider("values", 0) +
       " р. - " + $("#slider-range").slider("values", 1) + " р." );
   });
+  </script>
+  
+<!-- Catalog button on mobile screens -->
+  <script>
+    if (window.innerWidth < 1023) {
+      $('.sidebar__btn').click(function() {
+        $('.sidebar__list').slideToggle();
+      })
+    }
   </script>
 </body>
 </html>
