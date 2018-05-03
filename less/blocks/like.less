@@ -1,4 +1,6 @@
 .like {
+  position: relative;
+  
   img {
     width: 50px;
     height: auto;
@@ -16,5 +18,22 @@
   a:active {
     opacity: 0.7;
     transition: ease-out 0.3s;
+  }
+}
+
+.cart--full,
+.like--full {
+  span {
+    display: block;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+    text-align: center;
+    line-height: 20px;
+    border-radius: 50%;
+    background-color: @green;
   }
 }
