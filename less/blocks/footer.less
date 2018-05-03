@@ -9,6 +9,8 @@
   &--internal {
     position: static;
     
+    .footer__wrap,
+    .footer__wrap a,
     .footer__block {
       color: #222222;
     }
@@ -23,9 +25,28 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #fff;
+  font-size: 16px;
+  letter-spacing: 0.075em;
   
   &--user {
     justify-content: flex-start;
+  }
+  
+  &:last-child {
+    justify-content: flex-end;
+    text-align: right;
+  }
+  
+  a {
+    color: #fff;
+    transition: ease-out 0.3s;
+    
+    &:hover,
+    &:active {
+      opacity: 0.7;
+      transition: ease-out 0.3s;
+    }
   }
 }
 

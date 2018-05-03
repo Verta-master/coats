@@ -326,18 +326,24 @@
   .modal__captcha {
     margin-left: 0;
   }
+  .footer__wrap {
+    font-size: 12px;
+  }
 }
 
 //-------------------------
 @media (max-width: 480px) {
   .footer__wrap:last-child {
-    display: none;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
   }
   .footer__wrap {
     width: 50%;
   }
   .wrapper-main {
     justify-content: space-between;
+    flex-wrap: wrap;
   }
   .menu__btn,
   .cart img {
