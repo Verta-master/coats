@@ -2,10 +2,13 @@
   width: 575px;
   padding: 50px 55px;
   
+  p {
+    text-align: center;
+  }
+  
   .title {
     margin-top: 0;
-    margin-bottom: 42px;
-    text-align: center;
+    margin-bottom: 30px;
   }
   
   .fancybox-close-small {
@@ -16,6 +19,64 @@
     right: 12px;
     border-radius: 50%;
     border: 1px solid rgb(193, 193, 193);
+  }
+}
+
+.modal__value {
+  span {
+    display: block;
+    font-size: 18px;
+  }
+}
+
+.modal__radio {
+  display: none;
+}
+
+.modal__wrap {
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.modal__sign {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #222;
+  opacity: 0.2;
+  cursor: pointer;
+}
+#value-1:checked ~ .modal__wrap .modal__sign--1,
+#value-2:checked ~ .modal__wrap .modal__sign--2,
+#value-3:checked ~ .modal__wrap .modal__sign--3,
+#value-4:checked ~ .modal__wrap .modal__sign--4,
+#value-5:checked ~ .modal__wrap .modal__sign--5,
+#value-6:checked ~ .modal__wrap .modal__sign--6,
+#value-7:checked ~ .modal__wrap .modal__sign--7,
+#value-8:checked ~ .modal__wrap .modal__sign--8,
+#value-9:checked ~ .modal__wrap .modal__sign--9,
+#value-10:checked ~ .modal__wrap .modal__sign--10 {
+  background-color: @green;
+  opacity: 1;
+}
+
+.modal__range {
+  position: absolute;
+  bottom: -25px;
+  opacity: 0.5;
+  
+  &--min {
+    left: 20px;
+  }
+  
+  &--max {
+    right: 15px;
   }
 }
 
@@ -57,7 +118,7 @@
 }
 
 .modal__captcha {
-  margin-top: 55px;
+  margin-top: 0;
   margin-left: 120px;
   padding: 20px 13px;
   border: 1px solid rgb(193, 193, 193);
