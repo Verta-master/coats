@@ -1,11 +1,15 @@
 @media (max-width: 1800px) {
   .wrapper {
     padding-left: 320px;
-    padding-top: 100px;
+    padding-top: 120px;
     width: 100%;
     
     &--info {
       padding-left: 20px;
+    }
+    &--card {
+      padding-left: 20px;
+      width: 1255px;
     }
   }
   .wrapper-main {
@@ -26,6 +30,12 @@
   .info {
     margin-left: auto;
     margin-right: auto;
+  }
+  .link-back {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-bottom: 30px;
   }
 }
 
@@ -136,6 +146,18 @@
   .logo img {
     width: 200px;
   }
+  .wrapper--card {
+    width: 100%;
+  }
+  .card__slider {
+    width: 630px;
+  }
+  .related .catalog__item {
+    width: 30%;
+  }
+  .related .catalog__img {
+    height: 370px;
+  }
 }
 
 //--------------------------
@@ -176,8 +198,9 @@
     padding-left: 20px;
     padding-top: 0;
     
+    &--card,
     &--info {
-      padding-top: 100px;
+      padding-top: 120px;
     }
   }
   .info {
@@ -227,6 +250,47 @@
   }
   .review__author {
     padding-top: 0;
+  }
+  .card {
+    display: block;
+  }
+  .card__slider {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .card__info {
+    width: 100%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    .filter__select {
+      max-width: 300px;
+    }
+  }
+  .card__label span {
+    display: inline;
+    margin-left: 20px;
+  }
+  .card__btn, .card__like {
+    width: 50%;
+  }
+  .related .catalog__img {
+    height: 270px;
+  }
+  .related {
+    .catalog__select {
+      height: 40px;
+      background-position: 93% 15px;
+    }
+    .catalog__overlay {
+      padding: 20px 15px;
+    }
+    .catalog__cart {
+      height: 40px;
+      margin-top: 15px;
+      letter-spacing: normal;
+    }
   }
 }
 
@@ -337,6 +401,27 @@
   }
   .logo img {
     width: 150px;
+  }
+  .card__slider {
+    width: 100%;
+  }
+  .related {
+    .catalog__item {
+      width: 280px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 20px;
+    }
+    .catalog__img {
+      height: 350px;
+    }
+  }
+  .card__btn,
+  .card__like {
+    width: 280px;
+  }
+  .card__like::before {
+    left: 25px;
   }
 }
 
