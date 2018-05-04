@@ -34,9 +34,6 @@
   .header {
     padding-top: 10px;
   }
-  .footer {
-    padding-bottom: 10px;
-  }
   .cart img,
   .like img,
   .footer__block img,
@@ -136,6 +133,9 @@
   .review__response {
     width: 760px;
   }
+  .logo img {
+    width: 200px;
+  }
 }
 
 //--------------------------
@@ -147,6 +147,12 @@
     &:last-of-type {
       display: none;
     }
+  }
+  .footer {
+    padding-bottom: 10px;
+  }
+  .footer__maker {
+    display: none;
   }
   .footer__block--review {
     display: none;
@@ -329,14 +335,17 @@
   .footer__wrap {
     font-size: 12px;
   }
+  .logo img {
+    width: 150px;
+  }
 }
 
 //-------------------------
 @media (max-width: 480px) {
   .footer__wrap:last-child {
     width: 100%;
-    text-align: center;
-    justify-content: center;
+    text-align: left;
+    justify-content: flex-start;
   }
   .footer__wrap {
     width: 50%;
