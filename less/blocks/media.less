@@ -84,6 +84,12 @@
   .promo {
     margin-top: 100px;
   }
+  .related__next {
+    right: -20px;
+  }
+  .related__prev {
+    left: -20px;
+  }
 }
 
 //-------------------------
@@ -153,10 +159,21 @@
     width: 630px;
   }
   .related .catalog__item {
-    width: 30%;
+    width: 280px;
   }
   .related .catalog__img {
-    height: 370px;
+    height: 350px;
+  }
+  .related__slider {
+    width: 880px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .related__next {
+    right: 0;
+  }
+  .related__prev {
+    left: 0;
   }
   .card__preview {
     margin-right: 25px;
@@ -280,9 +297,8 @@
   }
   .card__btn, .card__like {
     width: 50%;
-  }
-  .related .catalog__img {
-    height: 270px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .related {
     .catalog__select {
@@ -311,6 +327,15 @@
   }
   .review__btn {
     margin-right: 0;
+  }
+  .related__slider {
+    width: 600px;
+  }
+  .card__info {
+    text-align: center;
+  }
+  .card__tab {
+    text-align: left;
   }
 }
 
@@ -425,17 +450,6 @@
   .card__slider {
     width: 100%;
   }
-  .related {
-    .catalog__item {
-      width: 280px;
-      margin-left: auto;
-      margin-right: auto;
-      margin-bottom: 20px;
-    }
-    .catalog__img {
-      height: 350px;
-    }
-  }
   .card__btn,
   .card__like {
     width: 280px;
@@ -445,6 +459,30 @@
   }
   .card__photo {
     max-width: 340px;
+  }
+  .related__slider {
+    width: 280px;
+  }
+  .card__slider {
+    flex-direction: column-reverse;
+  }
+  .card__preview {
+    width: 100%;
+    margin-right: 0;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    align-content: flex-start;
+    
+    a {
+      margin-bottom: 20px;
+    }
+  }
+  .card__photo {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -514,21 +552,5 @@
   .footer-basic__input {
     width: 100%;
     margin-bottom: 20px;
-  }
-  .card__slider {
-    flex-direction: column-reverse;
-  }
-  .card__preview {
-    margin-right: 0;
-    margin-top: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: flex-start;
-    align-content: flex-start;
-    
-    a {
-      margin-bottom: 20px;
-    }
   }
 }

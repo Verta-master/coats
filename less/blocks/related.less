@@ -1,4 +1,6 @@
 .related {
+  position: relative;
+  
   .title {
     text-align: center;
   }
@@ -10,4 +12,20 @@
   .catalog__img {
     height: 490px;
   }
+}
+
+.related__next,
+.related__prev {
+  top: 45%;
+  background-image: url(../img/back.png);
+  background-size: 26px 22px;
+}
+
+.related__next {
+  right: -50px;
+  transform: rotate(180deg);
+}
+
+.related__prev {
+  left: -50px;
 }

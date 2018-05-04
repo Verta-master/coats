@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta  name="viewport" content="width=device-width,initial-scale=1">
   <title>Шубы</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.2/css/swiper.min.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -213,95 +214,157 @@
       
       <div class="related">
         <p class="title">Возможно вам понравится</p>
-        <ul class="catalog">
-          <li class="catalog__item">
-            <div class="catalog__wrap">
-              <figure class="catalog__img">
-                <a href="#" class="catalog__link">
-                  <img src="img/catalog-1.jpg" alt="Юбка-Волан" width="598" height="750">
-                </a>
-                <a href="#" class="catalog__like catalog__like--ready" title="добавить в избранное"></a>
-              </figure>
-              <div class="catalog__overlay">
-                <form action="#" class="catalog__form">
-                  <label class="catalog__label">Размер</label>
-                  <select name="size" class="filter__select catalog__select">
-                    <option value="1">38</option>
-                    <option value="2" disabled>40</option>
-                    <option value="3">42</option>
-                    <option value="4">44</option>
-                    <option value="5">46</option>
-                    <option value="6">48</option>
-                    <option value="7">50</option>
-                  </select>
-                  <a href="#" class="btn catalog__cart">добавить в корзину</a>
-                </form>
+        <div class="swiper-container related__slider">
+          <ul class="swiper-wrapper">
+            <li class="swiper-slide catalog__item">
+              <div class="catalog__wrap">
+                <figure class="catalog__img">
+                  <a href="#" class="catalog__link">
+                    <img src="img/catalog-1.jpg" alt="Юбка-Волан" width="598" height="750">
+                  </a>
+                  <a href="#" class="catalog__like catalog__like--ready" title="добавить в избранное"></a>
+                </figure>
+                <div class="catalog__overlay">
+                  <form action="#" class="catalog__form">
+                    <label class="catalog__label">Размер</label>
+                    <select name="size" class="filter__select catalog__select">
+                      <option value="1">38</option>
+                      <option value="2" disabled>40</option>
+                      <option value="3">42</option>
+                      <option value="4">44</option>
+                      <option value="5">46</option>
+                      <option value="6">48</option>
+                      <option value="7">50</option>
+                    </select>
+                    <a href="#" class="btn catalog__cart">добавить в корзину</a>
+                  </form>
+                </div>
               </div>
-            </div>
-            <div class="catalog__info">
-              <p class="catalog__title"><a href="#">"Юбка-Волан", цвет черный, вор-к "Капюшон"</a></p>
-              <p class="catalog__price">19 850 р.</p>
-            </div>
-          </li>
-          <li class="catalog__item">
-            <div class="catalog__wrap">
-              <figure class="catalog__img">
-                <a href="#" class="catalog__link">
-                  <img src="img/catalog-2.jpg" alt="Юбка-Волан" width="598" height="750">
-                </a>
-                <a href="#" class="catalog__like" title="добавить в избранное"></a>
-              </figure>
-              <div class="catalog__overlay">
-                <form action="#" class="catalog__form">
-                  <label class="catalog__label">Размер</label>
-                  <select name="size" class="filter__select catalog__select">
-                    <option value="1">38</option>
-                    <option value="2" disabled>40</option>
-                    <option value="3">42</option>
-                    <option value="4">44</option>
-                    <option value="5">46</option>
-                    <option value="6">48</option>
-                    <option value="7">50</option>
-                  </select>
-                  <a href="#" class="btn catalog__cart">добавить в корзину</a>
-                </form>
+              <div class="catalog__info">
+                <p class="catalog__title"><a href="#">"Юбка-Волан", цвет черный, вор-к "Капюшон"</a></p>
+                <p class="catalog__price">19 850 р.</p>
               </div>
-            </div>
-            <div class="catalog__info">
-              <p class="catalog__title"><a href="#">"Юбка-Волан", цвет черный, вор-к "Капюшон"</a></p>
-              <p class="catalog__price">19 850 р.</p>
-            </div>
-          </li>
-          <li class="catalog__item">
-            <div class="catalog__wrap">
-              <figure class="catalog__img">
-                <a href="#" class="catalog__link">
-                  <img src="img/catalog-1.jpg" alt="Юбка-Волан" width="598" height="750">
-                </a>
-                <a href="#" class="catalog__like catalog__like--ready" title="добавить в избранное"></a>
-              </figure>
-              <div class="catalog__overlay">
-                <form action="#" class="catalog__form">
-                  <label class="catalog__label">Размер</label>
-                  <select name="size" class="filter__select catalog__select">
-                    <option value="1">38</option>
-                    <option value="2" disabled>40</option>
-                    <option value="3">42</option>
-                    <option value="4">44</option>
-                    <option value="5">46</option>
-                    <option value="6">48</option>
-                    <option value="7">50</option>
-                  </select>
-                  <a href="#" class="btn catalog__cart">добавить в корзину</a>
-                </form>
+            </li>
+            <li class="swiper-slide catalog__item">
+              <div class="catalog__wrap">
+                <figure class="catalog__img">
+                  <a href="#" class="catalog__link">
+                    <img src="img/catalog-2.jpg" alt="Юбка-Волан" width="598" height="750">
+                  </a>
+                  <a href="#" class="catalog__like" title="добавить в избранное"></a>
+                </figure>
+                <div class="catalog__overlay">
+                  <form action="#" class="catalog__form">
+                    <label class="catalog__label">Размер</label>
+                    <select name="size" class="filter__select catalog__select">
+                      <option value="1">38</option>
+                      <option value="2" disabled>40</option>
+                      <option value="3">42</option>
+                      <option value="4">44</option>
+                      <option value="5">46</option>
+                      <option value="6">48</option>
+                      <option value="7">50</option>
+                    </select>
+                    <a href="#" class="btn catalog__cart">добавить в корзину</a>
+                  </form>
+                </div>
               </div>
-            </div>
-            <div class="catalog__info">
-              <p class="catalog__title"><a href="#">"Юбка-Волан", цвет черный, вор-к "Капюшон"</a></p>
-              <p class="catalog__price">19 850 р.</p>
-            </div>
-          </li>
-        </ul>
+              <div class="catalog__info">
+                <p class="catalog__title"><a href="#">"Юбка-Волан", цвет черный, вор-к "Капюшон"</a></p>
+                <p class="catalog__price">19 850 р.</p>
+              </div>
+            </li>
+            <li class="swiper-slide catalog__item">
+              <div class="catalog__wrap">
+                <figure class="catalog__img">
+                  <a href="#" class="catalog__link">
+                    <img src="img/catalog-1.jpg" alt="Юбка-Волан" width="598" height="750">
+                  </a>
+                  <a href="#" class="catalog__like catalog__like--ready" title="добавить в избранное"></a>
+                </figure>
+                <div class="catalog__overlay">
+                  <form action="#" class="catalog__form">
+                    <label class="catalog__label">Размер</label>
+                    <select name="size" class="filter__select catalog__select">
+                      <option value="1">38</option>
+                      <option value="2" disabled>40</option>
+                      <option value="3">42</option>
+                      <option value="4">44</option>
+                      <option value="5">46</option>
+                      <option value="6">48</option>
+                      <option value="7">50</option>
+                    </select>
+                    <a href="#" class="btn catalog__cart">добавить в корзину</a>
+                  </form>
+                </div>
+              </div>
+              <div class="catalog__info">
+                <p class="catalog__title"><a href="#">"Юбка-Волан", цвет черный, вор-к "Капюшон"</a></p>
+                <p class="catalog__price">19 850 р.</p>
+              </div>
+            </li>
+            <li class="swiper-slide catalog__item">
+              <div class="catalog__wrap">
+                <figure class="catalog__img">
+                  <a href="#" class="catalog__link">
+                    <img src="img/catalog-1.jpg" alt="Юбка-Волан" width="598" height="750">
+                  </a>
+                  <a href="#" class="catalog__like catalog__like--ready" title="добавить в избранное"></a>
+                </figure>
+                <div class="catalog__overlay">
+                  <form action="#" class="catalog__form">
+                    <label class="catalog__label">Размер</label>
+                    <select name="size" class="filter__select catalog__select">
+                      <option value="1">38</option>
+                      <option value="2" disabled>40</option>
+                      <option value="3">42</option>
+                      <option value="4">44</option>
+                      <option value="5">46</option>
+                      <option value="6">48</option>
+                      <option value="7">50</option>
+                    </select>
+                    <a href="#" class="btn catalog__cart">добавить в корзину</a>
+                  </form>
+                </div>
+              </div>
+              <div class="catalog__info">
+                <p class="catalog__title"><a href="#">"Юбка-Волан", цвет черный, вор-к "Капюшон"</a></p>
+                <p class="catalog__price">19 850 р.</p>
+              </div>
+            </li>
+            <li class="swiper-slide catalog__item">
+              <div class="catalog__wrap">
+                <figure class="catalog__img">
+                  <a href="#" class="catalog__link">
+                    <img src="img/catalog-2.jpg" alt="Юбка-Волан" width="598" height="750">
+                  </a>
+                  <a href="#" class="catalog__like" title="добавить в избранное"></a>
+                </figure>
+                <div class="catalog__overlay">
+                  <form action="#" class="catalog__form">
+                    <label class="catalog__label">Размер</label>
+                    <select name="size" class="filter__select catalog__select">
+                      <option value="1">38</option>
+                      <option value="2" disabled>40</option>
+                      <option value="3">42</option>
+                      <option value="4">44</option>
+                      <option value="5">46</option>
+                      <option value="6">48</option>
+                      <option value="7">50</option>
+                    </select>
+                    <a href="#" class="btn catalog__cart">добавить в корзину</a>
+                  </form>
+                </div>
+              </div>
+              <div class="catalog__info">
+                <p class="catalog__title"><a href="#">"Юбка-Волан", цвет черный, вор-к "Капюшон"</a></p>
+                <p class="catalog__price">19 850 р.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="swiper-button-next related__next"></div>
+        <div class="swiper-button-prev related__prev"></div>
       </div>
       
       <footer class="footer-basic">
@@ -384,6 +447,7 @@
   
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="js/script-internal.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.2/js/swiper.min.js"></script>
   
 <!-- Tabs inside the card -->
   <script>
@@ -393,6 +457,20 @@
       $('.card__pointer').not(this).removeClass('card__pointer--minus');
       $('.card__pointer').not(this).next().stop(true,true).slideUp();
     })
+  </script>
+  
+  <!-- Sliders -->
+  <script>
+    var mySwiper = new Swiper ('.related__slider', {
+      navigation: {
+        nextEl: '.related__next',
+        prevEl: '.related__prev',
+      },
+      preventClicks: false,
+      preventClicksPropagation: false,
+      slidesPerView: 'auto',
+      spaceBetween: 20,
+    });
   </script>
 </body>
 </html>
