@@ -18,3 +18,34 @@
   display: flex;
   flex-direction: column;
 }
+
+.link-back {
+  display: block;
+  position: fixed;
+  top: 150px;
+  left: 60px;
+  padding-left: 40px;
+  font-size: 16px;
+  color: #222;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  transition: ease-out 0.3s;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 26px;
+    height: 22px;
+    background-image: url(../img/back.png);
+    background-repeat: no-repeat;
+  }
+  
+  &:hover,
+  &:active {
+    color: @hover;
+    transition: ease-out 0.3s;
+  }
+}

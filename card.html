@@ -117,9 +117,88 @@
   </header>
   
   <main>
-    <article class="wrapper wrapper--info">
+    <a href="#" class="link-back">НАЗАД В КАТАЛОГ</a>
+    <article class="wrapper">
       <section class="card">
+        <div class="card__slider">
+<!--  Slider will be here. Image is needed for size estimation    -->
+          <img src="img/img-3.jpg" alt="Slider" width="850">
+        </div>
         
+        <div class="card__info">
+          <p class="card__title">"Юбка-Волан", цвет черный, вор-к "Капюшон"</p>
+          <form action="#" class="card__form">
+            <p class="card__price">19 850 р.</p>
+            <fieldset class="card__field">
+              <label for="size" class="card__label">Размер</label>
+              <select name="size" id="size" class="filter__select">
+                <option value="1">38</option>
+                <option value="2">40</option>
+                <option value="3">42</option>
+                <option value="4">44</option>
+                <option value="5">46</option>
+                <option value="6">48</option>
+                <option value="7">50</option>
+              </select>
+            </fieldset>
+            <fieldset class="card__field">
+              <p class="card__label">Артикул<span>0673800862</span></p>
+            </fieldset>
+            <fieldset class="card__field">
+              <p class="card__label">Цвет</p>
+              <button class="card__color card__color--active"></button>
+              <button class="card__color"></button>
+              <p class="card__colorname"><span>Серобуропрекрасный</span></p>
+            </fieldset>
+            <a href="#" class="btn card__btn">добавить в корзину</a>
+            <a href="#" class="card__like">добавить в избранное</a>
+            <p class="card__label">Срок доставки<span>от 1 рабочего дня</span></p>
+          </form>
+          <ul class="card__tabs">
+            <li class="card__tab">
+              <button type="button" class="card__pointer">Где купить сегодня</button>
+              <div class="card__text">
+                <p>Где купить</p>
+              </div>
+            </li>
+            <li class="card__tab">
+              <button type="button" class="card__pointer">Описание</button>
+              <div class="card__text">
+                <p>Описание</p>
+              </div>
+            </li>
+            <li class="card__tab">
+              <button type="button" class="card__pointer">Обмеры</button>
+              <div class="card__text">
+                <p>Длина стельки: 24 см (35) 24,5 см (36) 25 см (37) 26 см (38) 26,5 см (39) 27 см (40) 27,5 см (41)<br>Высота подошвы: 2 см</p>
+                <p>Как измерить и подобрать размер обуви:<br>
+                  - Поставьте стопу на лист бумаги<br>
+                  - Обведите контур стопы<br>
+                  - Измерьте сантиметром расстояние от пятки до края пальцев, чтобы определить длину вашей стопы<br>
+                  - Определите ваш размер с помощью приведённых параметров, прибавив к длине стопы 0,5-1 см<br>
+                  - Всегда округляйте размер в сторону большего</p>
+              </div>
+            </li>
+            <li class="card__tab">
+              <button type="button" class="card__pointer">Параметры модели</button>
+              <div class="card__text">
+                <p>Параметры модели</p>
+              </div>
+            </li>
+            <li class="card__tab">
+              <button type="button" class="card__pointer">Уход за моделью</button>
+              <div class="card__text">
+                <p>Уход за моделью</p>
+              </div>
+            </li>
+            <li class="card__tab">
+              <button type="button" class="card__pointer">Состав</button>
+              <div class="card__text">
+                <p>Состав</p>
+              </div>
+            </li>
+          </ul>
+        </div>
       </section>
       
       <section class="advert">
@@ -303,7 +382,7 @@
         <a href="#" class="footer__social" title="Odnoklassniki">
           <img src="img/icon-ok-internal.svg" alt="Odnoklassniki" width="68" height="68">
         </a>
-        <p>Разработка сайта -&nbsp;<a href="http://lidstudio.ru/">LidStudio</a></p>
+        <p class="footer__maker">Разработка сайта -&nbsp;<a href="http://lidstudio.ru/">LidStudio</a></p>
       </div>
       <div class="footer__wrap">
         <a href="#" class="footer__block footer__block--contacts">
@@ -316,5 +395,15 @@
   
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="js/script-internal.js"></script>
+  
+<!-- Tabs inside the card -->
+  <script>
+    $('.card__pointer').click(function() {
+      $(this).next().slideToggle();
+      $(this).toggleClass('card__pointer--minus');
+      $('.card__pointer').not(this).removeClass('card__pointer--minus');
+      $('.card__pointer').not(this).next().stop(true,true).slideUp();
+    })
+  </script>
 </body>
 </html>
