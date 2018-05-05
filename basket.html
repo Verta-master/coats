@@ -226,26 +226,43 @@
             
             <fieldset class="basket__field">
               <p class="payment__label">Оформление заказа</p>
-              <label for="name" class="payment__info">Имя и Фамилия:<span>*</span></label>
-              <input type="text" name="name" id="name" class="payment__field" required>
-              <label for="email" class="payment__info">E-mail:<span>*</span></label>
-              <input type="email" name="email" id="email" class="payment__field" required>
-              <label for="city" class="payment__info">Город:<span>*</span></label>
-              <input type="text" name="city" id="city" class="payment__field" required>
-              <label for="phone" class="payment__info">Контактный телефон:<span>*</span></label>
-              <input type="tel" name="phone" id="phone" class="payment__field" required>
-              <label for="address" class="payment__info">Адрес:<span>*</span></label>
-              <input type="text" name="address" id="address" class="payment__field" required>
-              <label for="text" class="payment__info">Дополнительная информация к заказу:</label>
-              <textara name="text" id="text" class="payment__text"></textara>
+              <div class="payment__block">
+                <label for="name" class="payment__info">Имя и Фамилия:<span>*</span></label>
+                <input type="text" name="name" id="name" class="payment__field" required>
+              </div>
+              <div class="payment__block">
+                <label for="email" class="payment__info">E-mail:<span>*</span></label>
+                <input type="email" name="email" id="email" class="payment__field" required>
+              </div>
+              <div class="payment__block">
+                <label for="city" class="payment__info">Город:<span>*</span></label>
+                <input type="text" name="city" id="city" class="payment__field" required>
+              </div>
+              <div class="payment__block">
+                <label for="phone" class="payment__info">Контактный телефон:<span>*</span></label>
+                <input type="tel" name="phone" id="phone" class="payment__field" required>
+              </div>
+              <div class="payment__block">
+                <label for="address" class="payment__info">Адрес:<span>*</span></label>
+                <input type="text" name="address" id="address" class="payment__field" required>
+              </div>
+              <div class="payment__block">
+                <label for="info" class="payment__info">Дополнительная информация к заказу:</label>
+                <textarea name="text" id="info" class="payment__text"></textarea>
+              </div>
+              <div class="payment__comment">
+                <input type="checkbox" name="tick" id="tick" class="payment__tick">
+                <label for="tick" class="payment__call">Не перезванивать</label>
+                <p><span>*</span>Поля, обязательные для заполнения</p>
+              </div>
             </fieldset>
           </div>
           
           <div class="basket__final">
-            <a href="#">Войти<span>в личный кабинет</span></a>
-            <a href="#">Условия доставки</a>
-            <a href="#">Условия обмена и возврата</a>
-            <a href="#">Информация об оплате</a>
+            <a href="#"><span>Войти</span>в личный кабинет</a>
+            <a href="#"><span>Условия доставки</span></a>
+            <a href="#"><span>Условия обмена и возврата</span></a>
+            <a href="#"><span>Информация об оплате</span></a>
             <div class="basket__wrap">
               <p>Итого:</p>
               <p class="basket__price">19 850 р.</p>
