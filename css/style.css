@@ -460,6 +460,19 @@ button {
 .modal__input.error_input {
   border-color: #ff0000;
 }
+.js_shop_img.shop-item-image {
+  display: none;
+}
+.js_shop_img.shop-item-image.active {
+  display: block;
+}
+.shop_form .error {
+  text-align: center;
+  margin: 0 0 15px 0;
+}
+.shop_form .error a {
+  color: #75D1D1;
+}
 .wrapper-main {
   width: 100%;
   padding-left: 50px;
@@ -2108,6 +2121,9 @@ button {
 .card__like:active {
   border-color: rgba(102, 204, 204, 0.9);
 }
+.card__like--ready::before {
+  background-image: url(../img/favorite-heart-button.svg);
+}
 .card__colorname {
   font-size: 16px;
   font-weight: 400;
@@ -2313,6 +2329,92 @@ button {
 }
 .payment {
   width: 795px;
+}
+.payment__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 50px;
+}
+.payment__label {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.payment__code {
+  width: 346px;
+  height: 34px;
+  padding: 0 10px;
+  border: 1px solid #c1c1c1;
+}
+.payment__btn {
+  width: 193px;
+  height: 34px;
+}
+.payment__select {
+  display: block;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  width: 249px;
+  height: 34px;
+}
+.payment__select option[disabled] {
+  display: none;
+}
+.payment__logo {
+  width: 175px;
+}
+.payment__check {
+  display: none;
+}
+.payment__post {
+  width: 620px;
+  padding-right: 60px;
+  position: relative;
+  font-size: 12px;
+}
+.payment__post span {
+  display: block;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.payment__post::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  border: 1px solid #c7c7c7;
+  cursor: pointer;
+}
+.payment__post::after {
+  display: none;
+  content: "";
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  border-radius: 50%;
+  width: 7px;
+  height: 7px;
+  background-color: rgba(153, 204, 204, 0.9);
+  cursor: pointer;
+}
+.payment__check:checked + .payment__post::after {
+  display: block;
+}
+.basket__field {
+  border: none;
+  padding: 0;
+  padding-top: 25px;
+  border-top: 1px solid rgba(153, 204, 204, 0.9);
 }
 @media (max-width: 1800px) {
   .wrapper {

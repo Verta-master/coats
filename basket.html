@@ -186,32 +186,40 @@
               <button type="submit" class="btn payment__btn">Активировать</button>
             </div>
             <label for="region" class="payment__label">Выберите регион доставки</label>
-            <select name="region" id="region" class="filter__select">
-              <option value="">Выберите</option>
+            <select name="region" id="region" class="filter__select payment__select">
+              <option value="" selected disabled>Выберите</option>
               <option value="1">Moscow</option>
               <option value="2">Sochi</option>
             </select>
             <div class="payment__wrap">
-              <img src="img/post_logo.jpg" alt="Почта РОССИИ" class="payment__logo" width="133">
-              <input type="checkbox" name="post" id="post" class="payment__check" checked>
+              <figure class="payment__logo">
+                <img src="img/post_logo.jpg" alt="Почта РОССИИ" width="133">
+              </figure>
+              <input type="radio" name="post" id="post" class="payment__check" checked>
               <label for="post" class="payment__post"><span>Почта РОССИИ</span>Срок доставки: 6-9 рабочих дня. Почтовая посылка будет доставлена в ближайшее почтовое отделение, в соответствии с адресом, указанным Вами в заказе.</label>
             </div>
             <div class="payment__wrap">
-              <img src="img/post_logo.jpg" alt="DPD курьерская доставка" class="payment__logo" width="133">
-              <input type="checkbox" name="dpd" id="post" class="payment__check">
+              <figure class="payment__logo">
+                <img src="img/post_logo.jpg" alt="DPD курьерская доставка" width="133">
+              </figure>
+              <input type="radio" name="post" id="dpd" class="payment__check">
               <label for="dpd" class="payment__post"><span>DPD курьерская доставка</span>Срок доставки: 6-9 рабочих дня. Почтовая посылка будет доставлена в ближайшее почтовое отделение, в соответствии с адресом, указанным Вами в заказе.</label>
             </div>
             
             <fieldset class="basket__field">
               <p class="payment__label">Выберите способ оплаты:</p>
               <div class="payment__wrap">
-                <img src="img/visa__logo.jpg" alt="Visa" class="payment__logo" width="99">
-                <input type="checkbox" name="card" id="card" class="payment__check" checked>
+                <figure class="payment__logo">
+                  <img src="img/visa__logo.jpg" alt="Visa" width="99">
+                </figure>
+                <input type="radio" name="card" id="card" class="payment__check" checked>
                 <label for="card" class="payment__post"><span>Кредитные карты</span>Оплата производится через любой банк. При выборе данного способа оплаты, вам будет выписан инвойс с реквизитами и номером заказа, который нужно указать в примечании перевода.</label>
               </div>
               <div class="payment__wrap">
-                <img src="img/bank-logo.jpg" alt="Банковский платеж" class="payment__logo" width="151">
-                <input type="checkbox" name="bank" id="bank" class="payment__check">
+                <figure class="payment__logo">
+                  <img src="img/bank-logo.jpg" alt="Банковский платеж" width="151">
+                </figure>
+                <input type="radio" name="card" id="bank" class="payment__check">
                 <label for="bank" class="payment__post"><span>Банковский платеж</span>Оплата производится через любой банк. При выборе данного способа оплаты, вам будет выписан инвойс с реквизитами и номером заказа, который нужно указать в примечании перевода.</label>
               </div>
             </fieldset>
