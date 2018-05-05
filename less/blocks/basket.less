@@ -1,5 +1,6 @@
 .basket__list {
-  margin-bottom: 60px;
+  padding-top: 12px;
+  margin-bottom: 55px;
   border-bottom: 1px solid @green;
 }
 
@@ -147,12 +148,22 @@
     font-weight: 400;
     text-transform: none;
     line-height: 1.5;
+    letter-spacing: 0.1em;
     
     a {
       display: inline;
       text-transform: none;
-      font-size: 12px;
+      text-decoration: underline;
+      
+      &:hover,
+      &:active {
+        text-decoration: none;
+      }
     }
+  }
+  
+  .basket__wrap {
+    margin-top: 80px;
   }
 }
 
