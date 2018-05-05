@@ -1,3 +1,97 @@
 .payment {
   width: 795px;
 }
+
+.payment__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.payment__label {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.payment__code {
+  width: 346px;
+  height: 34px;
+  padding: 0 10px;
+  border: 1px solid rgb(193, 193, 193);
+}
+
+.payment__btn {
+  width: 193px;
+  height: 34px;
+}
+
+.payment__select {
+  display: block;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  width: 249px;
+  height: 34px;
+}
+
+.payment__select option[disabled] {
+  display: none;
+}
+
+.payment__logo {
+  width: 175px;
+}
+
+.payment__check {
+  display: none;
+}
+
+.payment__post {
+  width: 620px;
+  padding-right: 60px;
+  position: relative;
+  font-size: 12px;
+  
+  span {
+    display: block;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 14px;
+  }
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    border: 1px solid #c7c7c7;
+    cursor: pointer;
+  }
+  
+  &::after {
+    display: none;
+    content: "";
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    border-radius: 50%;
+    width: 7px;
+    height: 7px;
+    background-color: @green;
+    cursor: pointer;
+  }
+}
+
+.payment__check:checked + .payment__post::after {
+  display: block;
+}
+
+.basket__field {
+  border: none;
+  padding: 0;
+  padding-top: 25px;
+  border-top: 1px solid @green;
+}
