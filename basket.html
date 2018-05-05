@@ -122,13 +122,130 @@
       <form action="#" class="basket">
         <ul class="basket__list">
           <li class="basket__item">
-            <figure class="basket__img">
+            <a href="#" class="basket__img">
               <img src="img/img-11.jpg" alt="Корзина" width="392" height="492">
-            </figure>
-            <p>"Юбка-Волан", цвет черный, вор-к "Капюшон"</p>
+            </a>
+            <p class="basket__title"><a href="#">"Юбка-Волан", цвет черный, вор-к "Капюшон"</a></p>
+            <p class="basket__values">
+              <button type="button" name="minus" class="basket__number">-</button>
+              <input type="text" name="value" class="basket__value" value="1">
+              <button type="button" name="plus" class="basket__number">+</button>
+            </p>
+            <p class="basket__sum">154000 p.</p>
+            <p class="basket__total">154000 p.</p>
+            <button type="button" class="basket__remove" title="Удалить из корзины"></button>
           </li>
-
+          <li class="basket__item">
+            <a href="#" class="basket__img">
+              <img src="img/img-11.jpg" alt="Корзина" width="392" height="492">
+            </a>
+            <p class="basket__title"><a href="#">"Юбка-Волан", цвет черный, вор-к "Капюшон"</a></p>
+            <p class="basket__values">
+              <button type="button" name="minus" class="basket__number">-</button>
+              <input type="text" name="value" class="basket__value" value="1">
+              <button type="button" name="plus" class="basket__number">+</button>
+            </p>
+            <p class="basket__sum">154000 p.</p>
+            <p class="basket__total">154000 p.</p>
+            <button type="button" class="basket__remove" title="Удалить из корзины"></button>
+          </li>
+          <li class="basket__item">
+            <a href="#" class="basket__img">
+              <img src="img/img-11.jpg" alt="Корзина" width="392" height="492">
+            </a>
+            <p class="basket__title"><a href="#">"Юбка-Волан", цвет черный, вор-к "Капюшон"</a></p>
+            <p class="basket__values">
+              <button type="button" name="minus" class="basket__number">-</button>
+              <input type="text" name="value" class="basket__value" value="1">
+              <button type="button" name="plus" class="basket__number">+</button>
+            </p>
+            <p class="basket__sum">1500 p.</p>
+            <p class="basket__total">1500 p.</p>
+            <button type="button" class="basket__remove" title="Удалить из корзины"></button>
+          </li>
+          <li class="basket__item">
+            <a href="#" class="basket__img">
+              <img src="img/img-11.jpg" alt="Корзина" width="392" height="492">
+            </a>
+            <p class="basket__title"><a href="#">"Юбка-Волан", цвет черный, вор-к "Капюшон"</a></p>
+            <p class="basket__values">
+              <button type="button" name="minus" class="basket__number">-</button>
+              <input type="text" name="value" class="basket__value" value="1">
+              <button type="button" name="plus" class="basket__number">+</button>
+            </p>
+            <p class="basket__sum">154000 p.</p>
+            <p class="basket__total">154000 p.</p>
+            <button type="button" class="basket__remove" title="Удалить из корзины"></button>
+          </li>
         </ul>
+        <div class="basket__wrap">
+          <div class="payment">
+            <div class="payment__wrap">
+              <label for="code" class="payment__label">Код купона на скидку</label>
+              <input type="text" name="code" id="code" class="payment__code">
+              <button type="submit" class="btn payment__btn">Активировать</button>
+            </div>
+            <label for="region" class="payment__label">Выберите регион доставки</label>
+            <select name="region" id="region" class="filter__select">
+              <option value="">Выберите</option>
+              <option value="1">Moscow</option>
+              <option value="2">Sochi</option>
+            </select>
+            <div class="payment__wrap">
+              <img src="img/post_logo.jpg" alt="Почта РОССИИ" class="payment__logo" width="133">
+              <input type="checkbox" name="post" id="post" class="payment__check" checked>
+              <label for="post" class="payment__post"><span>Почта РОССИИ</span>Срок доставки: 6-9 рабочих дня. Почтовая посылка будет доставлена в ближайшее почтовое отделение, в соответствии с адресом, указанным Вами в заказе.</label>
+            </div>
+            <div class="payment__wrap">
+              <img src="img/post_logo.jpg" alt="DPD курьерская доставка" class="payment__logo" width="133">
+              <input type="checkbox" name="dpd" id="post" class="payment__check">
+              <label for="dpd" class="payment__post"><span>DPD курьерская доставка</span>Срок доставки: 6-9 рабочих дня. Почтовая посылка будет доставлена в ближайшее почтовое отделение, в соответствии с адресом, указанным Вами в заказе.</label>
+            </div>
+            
+            <fieldset class="basket__field">
+              <p class="payment__label">Выберите способ оплаты:</p>
+              <div class="payment__wrap">
+                <img src="img/visa__logo.jpg" alt="Visa" class="payment__logo" width="99">
+                <input type="checkbox" name="card" id="card" class="payment__check" checked>
+                <label for="card" class="payment__post"><span>Кредитные карты</span>Оплата производится через любой банк. При выборе данного способа оплаты, вам будет выписан инвойс с реквизитами и номером заказа, который нужно указать в примечании перевода.</label>
+              </div>
+              <div class="payment__wrap">
+                <img src="img/bank-logo.jpg" alt="Банковский платеж" class="payment__logo" width="151">
+                <input type="checkbox" name="bank" id="bank" class="payment__check">
+                <label for="bank" class="payment__post"><span>Банковский платеж</span>Оплата производится через любой банк. При выборе данного способа оплаты, вам будет выписан инвойс с реквизитами и номером заказа, который нужно указать в примечании перевода.</label>
+              </div>
+            </fieldset>
+            
+            <fieldset class="basket__field">
+              <p class="payment__label">Оформление заказа</p>
+              <label for="name" class="payment__info">Имя и Фамилия:<span>*</span></label>
+              <input type="text" name="name" id="name" class="payment__field" required>
+              <label for="email" class="payment__info">E-mail:<span>*</span></label>
+              <input type="email" name="email" id="email" class="payment__field" required>
+              <label for="city" class="payment__info">Город:<span>*</span></label>
+              <input type="text" name="city" id="city" class="payment__field" required>
+              <label for="phone" class="payment__info">Контактный телефон:<span>*</span></label>
+              <input type="tel" name="phone" id="phone" class="payment__field" required>
+              <label for="address" class="payment__info">Адрес:<span>*</span></label>
+              <input type="text" name="address" id="address" class="payment__field" required>
+              <label for="text" class="payment__info">Дополнительная информация к заказу:</label>
+              <textara name="text" id="text" class="payment__text"></textara>
+            </fieldset>
+          </div>
+          
+          <div class="basket__final">
+            <a href="#">Войти<span>в личный кабинет</span></a>
+            <a href="#">Условия доставки</a>
+            <a href="#">Условия обмена и возврата</a>
+            <a href="#">Информация об оплате</a>
+            <div class="basket__wrap">
+              <p>Итого:</p>
+              <p class="basket__price">19 850 р.</p>
+            </div>
+            <button type="submit" class="btn basket__btn">ПОДТВЕРДИТЬ ЗАКАЗ</button>
+            <p class="basket__comment">Нажимая на кнопку «подтвердить заказ», я принимаю условия <a href="#">публичной оферты и политики конфиденциальности</a></p>
+          </div>
+        </div>
       </form>
       
       <footer class="footer-basic">

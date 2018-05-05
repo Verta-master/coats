@@ -2149,6 +2149,171 @@ button {
   display: none;
   line-height: 1.5;
 }
+.basket__list {
+  margin-bottom: 60px;
+  border-bottom: 1px solid rgba(153, 204, 204, 0.9);
+}
+.basket__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 50px;
+}
+.basket__img {
+  width: 94px;
+  height: 118px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+.basket__title {
+  width: 700px;
+  margin: 0;
+  padding: 0 30px;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+.basket__title a {
+  color: #222;
+}
+.basket__title a:hover,
+.basket__title a:active {
+  text-decoration: underline;
+}
+.basket__number {
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+}
+.basket__number:hover,
+.basket__number:active {
+  color: rgba(102, 204, 204, 0.9);
+}
+.basket__value {
+  width: 50px;
+  height: 30px;
+  font-size: 16px;
+  text-align: center;
+  border: 1px solid #c1c1c1;
+}
+.basket__sum {
+  width: 110px;
+  text-align: center;
+}
+.basket__total {
+  width: 130px;
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+}
+.basket__remove {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 1px solid #c1c1c1;
+  position: relative;
+}
+.basket__remove::after {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  width: 25px;
+  height: 25px;
+  background-size: 12px 12px;
+  background-position: center;
+  background-image: url(../img/close.svg);
+  background-repeat: no-repeat;
+  opacity: 0.35;
+}
+.basket__remove:hover,
+.basket__remove:active {
+  border-color: #222;
+}
+.basket__remove:hover::after,
+.basket__remove:active::after {
+  opacity: 1;
+}
+.basket__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.basket__final {
+  width: 270px;
+}
+.basket__final a {
+  display: block;
+  margin-bottom: 25px;
+  color: #222;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+.basket__final a:hover,
+.basket__final a:active {
+  text-decoration: none;
+}
+.basket__final a span {
+  text-transform: none;
+  text-decoration: none;
+  margin-left: 10px;
+  font-size: 14px;
+}
+.basket__final p {
+  margin: 0;
+  line-height: 24px;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.basket__final .basket__price {
+  font-size: 24px;
+  text-transform: none;
+}
+.basket__final .basket__comment {
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: none;
+  line-height: 1.5;
+}
+.basket__final .basket__comment a {
+  display: inline;
+  text-transform: none;
+  font-size: 12px;
+}
+.basket__btn {
+  width: 100%;
+  height: 45px;
+  margin-top: 45px;
+  margin-bottom: 30px;
+}
+.payment {
+  width: 795px;
+}
 @media (max-width: 1800px) {
   .wrapper {
     padding-left: 320px;
