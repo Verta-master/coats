@@ -39,7 +39,7 @@
   margin-bottom: 50px;
   position: relative;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -52,16 +52,11 @@
   opacity: 0.2;
   cursor: pointer;
 }
-#value-1:checked ~ .modal__wrap .modal__sign--1,
-#value-2:checked ~ .modal__wrap .modal__sign--2,
-#value-3:checked ~ .modal__wrap .modal__sign--3,
-#value-4:checked ~ .modal__wrap .modal__sign--4,
-#value-5:checked ~ .modal__wrap .modal__sign--5,
-#value-6:checked ~ .modal__wrap .modal__sign--6,
-#value-7:checked ~ .modal__wrap .modal__sign--7,
-#value-8:checked ~ .modal__wrap .modal__sign--8,
-#value-9:checked ~ .modal__wrap .modal__sign--9,
-#value-10:checked ~ .modal__wrap .modal__sign--10 {
+#reviews_form_p5_1:checked ~ .modal__wrap .modal__sign--1,
+#reviews_form_p5_2:checked ~ .modal__wrap .modal__sign--2,
+#reviews_form_p5_3:checked ~ .modal__wrap .modal__sign--3,
+#reviews_form_p5_4:checked ~ .modal__wrap .modal__sign--4,
+#reviews_form_p5_5:checked ~ .modal__wrap .modal__sign--5 {
   background-color: @green;
   opacity: 1;
 }
@@ -72,11 +67,11 @@
   opacity: 0.5;
   
   &--min {
-    left: 20px;
+    left: 5px;
   }
   
   &--max {
-    right: 15px;
+    right: 5px;
   }
 }
 
