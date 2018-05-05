@@ -178,7 +178,7 @@
             <button type="button" class="basket__remove" title="Удалить из корзины"></button>
           </li>
         </ul>
-        <div class="basket__wrap">
+        <div class="basket__wrap basket__wrap--main">
           <div class="payment">
             <div class="payment__wrap">
               <label for="code" class="payment__label">Код купона на скидку</label>
@@ -191,7 +191,7 @@
               <option value="1">Moscow</option>
               <option value="2">Sochi</option>
             </select>
-            <div class="payment__wrap">
+            <div class="payment__block">
               <figure class="payment__logo">
                 <img src="img/post_logo.jpg" alt="Почта РОССИИ" width="133">
               </figure>
@@ -226,7 +226,7 @@
             
             <fieldset class="basket__field">
               <p class="payment__label">Оформление заказа</p>
-              <div class="payment__block">
+              <div class="payment__block payment__block--name">
                 <label for="name" class="payment__info">Имя и Фамилия:<span>*</span></label>
                 <input type="text" name="name" id="name" class="payment__field" required>
               </div>
@@ -268,7 +268,7 @@
               <p class="basket__price">19 850 р.</p>
             </div>
             <button type="submit" class="btn basket__btn">ПОДТВЕРДИТЬ ЗАКАЗ</button>
-            <p class="basket__comment">Нажимая на кнопку «подтвердить заказ», я принимаю условия <a href="#">публичной оферты и политики конфиденциальности</a></p>
+            <p class="basket__comment">Нажимая на кнопку «подтвердить заказ», я принимаю условия <a href="#">публичной оферты</a> и <a href="#">политики конфиденциальности</a></p>
           </div>
         </div>
       </form>
