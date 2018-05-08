@@ -2279,8 +2279,15 @@ button {
       -ms-flex-align: start;
           align-items: flex-start;
 }
+.basket__wrap--main {
+  position: relative;
+}
 .basket__final {
   width: 270px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 150px;
+  right: 0;
 }
 .basket__final a {
   display: block;
@@ -2588,6 +2595,9 @@ button {
   }
 }
 @media (max-width: 1278px) {
+  .basket__final {
+    position: static;
+  }
   .slider__pagination .swiper-pagination-bullet {
     width: 15px;
     height: 15px;

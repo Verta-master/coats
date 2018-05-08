@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta  name="viewport" content="width=device-width,initial-scale=1">
+  <title>Шубы</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  <header class="header header--internal">
+    <div class="wrapper-main">
+      <div class="header__wrap">
+        <nav class="menu">
+          <button class="menu__btn"><span class="visually-hidden">Menu</span></button>
+          <div class="menu__wrap">
+            <ul class="menu__list">
+              <li class="menu__column">
+                <ul class="menu__sublist">
+                  <li class="menu__item">
+                    <a href="#" class="menu__link">ГЛАВНАЯ</a>
+                  </li>
+                  <li class="menu__item">
+                    <a href="#" class="menu__link">КАТАЛОГ</a>
+                  </li>
+                  <li class="menu__item">
+                    <a href="#" class="menu__link">РАСПРОДАЖА</a>
+                  </li>
+                  <li class="menu__item">
+                    <a href="#" class="menu__link">АКЦИИ</a>
+                  </li>
+                  <li class="menu__item">
+                    <a href="#" class="menu__link">БЛОГ</a>
+                  </li>
+                  <li class="menu__item">
+                    <a href="#" class="menu__link">КОНТАКТЫ</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu__column">
+                <ul class="menu__sublist">
+                  <li class="menu__subitem">
+                    <a href="#" class="menu__link">КАТАЛОГ</a>
+                  </li>
+                  <li class="menu__subitem">
+                    <a href="#" class="menu__sublink">Верхняя одежда</a>
+                  </li>
+                  <li class="menu__subitem">
+                    <a href="#" class="menu__sublink">Трикотаж</a>
+                  </li>
+                  <li class="menu__subitem">
+                    <a href="#" class="menu__sublink">Деним</a>
+                  </li>
+                  <li class="menu__subitem">
+                    <a href="#" class="menu__sublink">Платья</a>
+                  </li>
+                  <li class="menu__subitem">
+                    <a href="#" class="menu__sublink">Обувь</a>
+                  </li>
+                  <li class="menu__subitem">
+                    <a href="#" class="menu__sublink">Комплекты</a>
+                  </li>
+                  <li class="menu__subitem">
+                    <a href="#" class="menu__sublink">Топы и блузы</a>
+                  </li>
+                  <li class="menu__subitem">
+                    <a href="#" class="menu__sublink">Футболки и толстовки</a>
+                  </li>
+                  <li class="menu__subitem">
+                    <a href="#" class="menu__sublink">Рубашки</a>
+                  </li>
+                  <li class="menu__subitem">
+                    <a href="#" class="menu__sublink">Юбки</a>
+                  </li>
+                  <li class="menu__subitem">
+                    <a href="#" class="menu__sublink">Брюки</a>
+                  </li>
+                  <li class="menu__subitem">
+                    <a href="#" class="menu__sublink">Жакеты</a>
+                  </li>
+                  <li class="menu__subitem">
+                    <a href="#" class="menu__sublink">Аксессуары</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu__column">
+                <form action="#" method="get" class="search">
+                  <button class="search__btn"><span class="visually-hidden">Найти</span></button>
+                  <input type="text" class="search__input" placeholder="Поиск по сайту">
+                </form>
+                <a href="#" class="menu__user menu__user--cart">Корзина</a>
+                <a href="#" class="menu__user menu__user--like">Избранное</a>
+                <a href="#" class="menu__user menu__user--review">Отзывы</a>
+                <a href="#" class="menu__user menu__user--version">English version</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <div class="header__wrap">
+        <a href="index.html" class="logo">
+          <img src="img/logo.svg" alt="Logo" width="141" height="42">
+        </a>
+      </div>
+
+      <div class="header__wrap header__wrap--user">
+        <div class="like">
+          <a href="#"><img src="img/like.svg" alt="Like" width="52" height="52"></a>
+          <span>5</span>
+        </div>
+        <div class="cart">
+          <a href="#"><img src="img/bag.svg" alt="Buy" width="40" height="55"></a>
+          <span>7</span>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+  <main>
+    <nav class="sidebar">
+      <p class="sidebar__item sidebar__btn">Блог</p>
+      <ul class="sidebar__list">
+        <li class="sidebar__item">
+          <a href="#" class="sidebar__link">Новости</a>
+        </li>
+        <li class="sidebar__item">
+          <a href="#" class="sidebar__link">Советы стилиста</a>
+        </li>
+      </ul>
+    </nav>
+    
+    <article class="wrapper">
+      <h1 class="title">Узнайте первыми о новинках и скидках</h1>
+      <form action="#" method="get" class="filter">
+        <div class="filter__range">
+          <label for="amount" class="filter__label">цена</label>
+          <div id="slider-range"></div>
+          <input type="text" id="min" class="filter__min" value="5000 p.">
+          <input type="text" id="max" class="filter__max" value="500000 p.">
+          <input type="text" id="amount" class="filter__price" readonly>
+        </div>
+        <fieldset>
+          <label for="size" class="filter__label">Размер</label>
+          <select name="size" id="size" class="filter__select">
+            <option value="1">38</option>
+            <option value="2">40</option>
+            <option value="3">42</option>
+            <option value="4">44</option>
+            <option value="5">46</option>
+            <option value="6">48</option>
+            <option value="7">50</option>
+          </select>
+        </fieldset>
+        <fieldset>
+          <label for="material" class="filter__label">материал</label>
+          <select name="material" id="material" class="filter__select">
+            <option value="1">Песец</option>
+            <option value="2">Другой</option>
+          </select>
+        </fieldset>
+        <button type="submit" class="btn filter__btn">найти</button>
+      </form>
+      <ul class="catalog">
+        <li class="catalog__item">
+          <div class="catalog__wrap">
+            <figure class="catalog__img">
+              <a href="#" class="catalog__link">
+                <img src="img/catalog-1.jpg" alt="Юбка-Волан" width="598" height="750">
+              </a>
+              <a href="#" class="catalog__like catalog__like--ready" title="добавить в избранное"></a>
+            </figure>
+            <div class="catalog__overlay">
+              <form action="#" class="catalog__form">
+                <label class="catalog__label">Размер</label>
+                <select name="size" class="filter__select catalog__select">
+                  <option value="1">38</option>
+                  <option value="2" disabled>40</option>
+                  <option value="3">42</option>
+                  <option value="4">44</option>
+                  <option value="5">46</option>
+                  <option value="6">48</option>
+                  <option value="7">50</option>
+                </select>
+                <a href="#" class="btn catalog__cart">добавить в корзину</a>
+              </form>
+            </div>
+          </div>
+          <div class="catalog__info">
+            <p class="catalog__title"><a href="#">"Юбка-Волан", цвет черный, вор-к "Капюшон"</a></p>
+            <p class="catalog__price">19 850 р.</p>
+          </div>
+        </li>
+        <li class="catalog__item">
+          <div class="catalog__wrap">
+            <figure class="catalog__img">
+              <a href="#" class="catalog__link">
+                <img src="img/catalog-2.jpg" alt="Юбка-Волан" width="598" height="750">
+              </a>
+              <a href="#" class="catalog__like" title="добавить в избранное"></a>
+            </figure>
+            <div class="catalog__overlay">
+              <form action="#" class="catalog__form">
+                <label class="catalog__label">Размер</label>
+                <select name="size" class="filter__select catalog__select">
+                  <option value="1">38</option>
+                  <option value="2" disabled>40</option>
+                  <option value="3">42</option>
+                  <option value="4">44</option>
+                  <option value="5">46</option>
+                  <option value="6">48</option>
+                  <option value="7">50</option>
+                </select>
+                <a href="#" class="btn catalog__cart">добавить в корзину</a>
+              </form>
+            </div>
+          </div>
+          <div class="catalog__info">
+            <p class="catalog__title"><a href="#">"Юбка-Волан", цвет черный, вор-к "Капюшон"</a></p>
+            <p class="catalog__price">19 850 р.</p>
+          </div>
+        </li>
+        <li class="catalog__item">
+          <div class="catalog__wrap">
+            <figure class="catalog__img">
+              <a href="#" class="catalog__link">
+                <img src="img/catalog-1.jpg" alt="Юбка-Волан" width="598" height="750">
+              </a>
+              <a href="#" class="catalog__like catalog__like--ready" title="добавить в избранное"></a>
+            </figure>
+            <div class="catalog__overlay">
+              <form action="#" class="catalog__form">
+                <label class="catalog__label">Размер</label>
+                <select name="size" class="filter__select catalog__select">
+                  <option value="1">38</option>
+                  <option value="2" disabled>40</option>
+                  <option value="3">42</option>
+                  <option value="4">44</option>
+                  <option value="5">46</option>
+                  <option value="6">48</option>
+                  <option value="7">50</option>
+                </select>
+                <a href="#" class="btn catalog__cart">добавить в корзину</a>
+              </form>
+            </div>
+          </div>
+          <div class="catalog__info">
+            <p class="catalog__title"><a href="#">"Юбка-Волан", цвет черный, вор-к "Капюшон"</a></p>
+            <p class="catalog__price">19 850 р.</p>
+          </div>
+        </li>
+        <li class="catalog__item">
+          <div class="catalog__wrap">
+            <figure class="catalog__img">
+              <a href="#" class="catalog__link">
+                <img src="img/catalog-2.jpg" alt="Юбка-Волан" width="598" height="750">
+              </a>
+              <a href="#" class="catalog__like" title="добавить в избранное"></a>
+            </figure>
+            <div class="catalog__overlay">
+              <form action="#" class="catalog__form">
+                <label class="catalog__label">Размер</label>
+                <select name="size" class="filter__select catalog__select">
+                  <option value="1">38</option>
+                  <option value="2" disabled>40</option>
+                  <option value="3">42</option>
+                  <option value="4">44</option>
+                  <option value="5">46</option>
+                  <option value="6">48</option>
+                  <option value="7">50</option>
+                </select>
+                <a href="#" class="btn catalog__cart">добавить в корзину</a>
+              </form>
+            </div>
+          </div>
+          <div class="catalog__info">
+            <p class="catalog__title"><a href="#">"Юбка-Волан", цвет черный, вор-к "Капюшон"</a></p>
+            <p class="catalog__price">19 850 р.</p>
+          </div>
+        </li>
+        <li class="catalog__item">
+          <div class="catalog__wrap">
+            <figure class="catalog__img">
+              <a href="#" class="catalog__link">
+                <img src="img/catalog-1.jpg" alt="Юбка-Волан" width="598" height="750">
+              </a>
+              <a href="#" class="catalog__like catalog__like--ready" title="добавить в избранное"></a>
+            </figure>
+            <div class="catalog__overlay">
+              <form action="#" class="catalog__form">
+                <label class="catalog__label">Размер</label>
+                <select name="size" class="filter__select catalog__select">
+                  <option value="1">38</option>
+                  <option value="2" disabled>40</option>
+                  <option value="3">42</option>
+                  <option value="4">44</option>
+                  <option value="5">46</option>
+                  <option value="6">48</option>
+                  <option value="7">50</option>
+                </select>
+                <a href="#" class="btn catalog__cart">добавить в корзину</a>
+              </form>
+            </div>
+          </div>
+          <div class="catalog__info">
+            <p class="catalog__title"><a href="#">"Юбка-Волан", цвет черный, вор-к "Капюшон"</a></p>
+            <p class="catalog__price">19 850 р.</p>
+          </div>
+        </li>
+        <li class="catalog__item">
+          <div class="catalog__wrap">
+            <figure class="catalog__img">
+              <a href="#" class="catalog__link">
+                <img src="img/catalog-2.jpg" alt="Юбка-Волан" width="598" height="750">
+              </a>
+              <a href="#" class="catalog__like" title="добавить в избранное"></a>
+            </figure>
+            <div class="catalog__overlay">
+              <form action="#" class="catalog__form">
+                <label class="catalog__label">Размер</label>
+                <select name="size" class="filter__select catalog__select">
+                  <option value="1">38</option>
+                  <option value="2" disabled>40</option>
+                  <option value="3">42</option>
+                  <option value="4">44</option>
+                  <option value="5">46</option>
+                  <option value="6">48</option>
+                  <option value="7">50</option>
+                </select>
+                <a href="#" class="btn catalog__cart">добавить в корзину</a>
+              </form>
+            </div>
+          </div>
+          <div class="catalog__info">
+            <p class="catalog__title"><a href="#">"Юбка-Волан", цвет черный, вор-к "Капюшон"</a></p>
+            <p class="catalog__price">19 850 р.</p>
+          </div>
+        </li>
+        <li class="catalog__item">
+          <div class="catalog__wrap">
+            <figure class="catalog__img">
+              <a href="#" class="catalog__link">
+                <img src="img/catalog-1.jpg" alt="Юбка-Волан" width="598" height="750">
+              </a>
+              <a href="#" class="catalog__like catalog__like--ready" title="добавить в избранное"></a>
+            </figure>
+            <div class="catalog__overlay">
+              <form action="#" class="catalog__form">
+                <label class="catalog__label">Размер</label>
+                <select name="size" class="filter__select catalog__select">
+                  <option value="1">38</option>
+                  <option value="2" disabled>40</option>
+                  <option value="3">42</option>
+                  <option value="4">44</option>
+                  <option value="5">46</option>
+                  <option value="6">48</option>
+                  <option value="7">50</option>
+                </select>
+                <a href="#" class="btn catalog__cart">добавить в корзину</a>
+              </form>
+            </div>
+          </div>
+          <div class="catalog__info">
+            <p class="catalog__title"><a href="#">"Юбка-Волан", цвет черный, вор-к "Капюшон"</a></p>
+            <p class="catalog__price">19 850 р.</p>
+          </div>
+        </li>
+        <li class="catalog__item">
+          <div class="catalog__wrap">
+            <figure class="catalog__img">
+              <a href="#" class="catalog__link">
+                <img src="img/catalog-2.jpg" alt="Юбка-Волан" width="598" height="750">
+              </a>
+              <a href="#" class="catalog__like" title="добавить в избранное"></a>
+            </figure>
+            <div class="catalog__overlay">
+              <form action="#" class="catalog__form">
+                <label class="catalog__label">Размер</label>
+                <select name="size" class="filter__select catalog__select">
+                  <option value="1">38</option>
+                  <option value="2" disabled>40</option>
+                  <option value="3">42</option>
+                  <option value="4">44</option>
+                  <option value="5">46</option>
+                  <option value="6">48</option>
+                  <option value="7">50</option>
+                </select>
+                <a href="#" class="btn catalog__cart">добавить в корзину</a>
+              </form>
+            </div>
+          </div>
+          <div class="catalog__info">
+            <p class="catalog__title"><a href="#">"Юбка-Волан", цвет черный, вор-к "Капюшон"</a></p>
+            <p class="catalog__price">19 850 р.</p>
+          </div>
+        </li>
+      </ul>
+      
+      <footer class="footer-basic">
+        <div class="footer-basic__column">
+          <p class="footer-basic__title">О компании</p>
+          <ul class="footer-basic__list">
+            <li><a href="#">Отзывы</a></li>
+            <li><a href="#">Пресса о нас</a></li>
+            <li><a href="#">Магазины</a></li>
+            <li><a href="#">Контакты</a></li>
+            <li><a href="#">Работа у нас</a></li>
+            <li><a href="#">Офис</a></li>
+          </ul>
+        </div>
+        <div class="footer-basic__column footer-basic__column--wide">
+          <p class="footer-basic__title">Покупателям</p>
+          <ul class="footer-basic__list">
+            <li><a href="#">Самовывоз</a></li>
+            <li><a href="#">Бесплатный возврат</a></li>
+            <li><a href="#">Политика конфиденциальности</a></li>
+            <li><a href="#">Часто задаваемые вопросы (F.A.Q.)</a></li>
+            <li><a href="#">Руководство по покупке</a></li>
+            <li><a href="#">Качество обслуживания</a></li>
+            <li><a href="#">Оплата</a></li>
+            <li><a href="#">Оферта</a></li>
+            <li><a href="#">Предзаказ</a></li>
+            <li><a href="#">Идеи и предложения</a></li>
+            <li><a href="#">Доставка</a></li>
+          </ul>
+        </div>
+        <div class="footer-basic__column footer-basic__column--form">
+          <form action="#" method="post" class="footer-basic__form">
+            <p class="footer-basic__title">Узнайте первыми о новинках и скидках</p>
+            <div class="footer-basic__wrap">
+              <input type="email" name="email" class="footer-basic__input" placeholder="укажите e-mail">
+              <button type="submit" class="btn footer-basic__btn">подписаться</button>
+            </div>
+            <p class="footer-basic__comment">Нажимая на кнопку «Подписаться», я соглашаюсь на обработку моих персональных данных и ознакомлен(а) с <a href="#">условиями конфиденциальности</a>.</p>
+          </form>
+        </div>
+      </footer>
+    </article>
+  </main>
+  
+  <footer class="footer footer--internal">
+    <div class="wrapper-main">
+      <div class="footer__wrap footer__wrap--user">
+        <a href="#" class="footer__block">
+          <img src="img/earth-globe.svg" alt="English version" width="45" height="45">
+          <p>English version</p>
+        </a>
+        <a href="#" class="footer__block footer__block--review">
+          <img src="img/chat.svg" alt="Отзывы" width="45" height="45">
+          <p>Отзывы</p>
+        </a>
+      </div>
+      <div class="footer__wrap">
+        <a href="#" class="footer__social footer__social--in" title="Instagram">
+          <img src="img/icon-instagram-internal.svg" alt="Instagram" width="68" height="68">
+        </a>
+        <a href="#" class="footer__social" title="VKontakte">
+          <img src="img/icon-vk-internal.svg" alt="VKontakte" width="68" height="68">
+        </a>
+        <a href="#" class="footer__social footer__social--fb" title="Facebook">
+          <img src="img/icon-facebook-internal.svg" alt="Facebook" width="68" height="68">
+        </a>
+        <a href="#" class="footer__social" title="Odnoklassniki">
+          <img src="img/icon-ok-internal.svg" alt="Odnoklassniki" width="68" height="68">
+        </a>
+        <p class="footer__maker">Разработка сайта -&nbsp;<a href="http://lidstudio.ru/">LidStudio</a></p>
+      </div>
+      <div class="footer__wrap">
+        <a href="#" class="footer__block footer__block--contacts">
+          <img src="img/phone-contact.svg" alt="Контакты" width="45" height="45">
+          <p>Контакты</p>
+        </a>
+      </div>
+    </div>
+  </footer>
+  
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/script-internal.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="js/jquery.ui.touch-punch.min.js"></script>
+  
+<!-- Range slider -->
+  <script>
+  $( function() {
+    $("#slider-range").slider({
+      range: true,
+      min: 5000,
+      max: 500000,
+      values: [ 34000, 500000 ],
+      slide: function( event, ui ) {
+        $("#amount").val( "Цена " + ui.values[ 0 ] + " р. - " + ui.values[ 1 ] + " р." );
+      }
+    });
+    $("#amount").val( "Цена " + $("#slider-range").slider("values", 0) +
+      " р. - " + $("#slider-range").slider("values", 1) + " р." );
+  });
+  </script>
+  
+<!-- Catalog button on mobile screens -->
+  <script>
+    if (window.innerWidth < 1023) {
+      $('.sidebar__btn').click(function() {
+        $('.sidebar__list').slideToggle();
+      })
+    }
+  </script>
+</body>
+</html>
