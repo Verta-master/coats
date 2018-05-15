@@ -537,5 +537,18 @@
       })
     }
   </script>
+  
+  <!-- Header scrolling effect -->
+  <script>
+    $(document).ready(function(){
+      $(window).scroll(function(){
+        if ((window.pageYOffset || document.documentElement.scrollTop ||document.body.scrollTop) >= 100) {
+          $(".header--internal").addClass('header--scroll')
+        } else {
+          $(".header--internal").removeClass('header--scroll')
+        }
+      });
+    });
+  </script>
 </body>
 </html>

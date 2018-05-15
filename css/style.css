@@ -2503,6 +2503,29 @@ button {
 .payment__tick:checked + .payment__call::after {
   display: block;
 }
+.menu__btn {
+  margin-top: 5px;
+}
+.slider__link {
+  border-radius: 30px;
+}
+.header--internal .logo img {
+  -webkit-transition: ease-out 0.5s;
+  transition: ease-out 0.5s;
+}
+.header--scroll {
+  padding-bottom: 7px;
+}
+.header--scroll .logo img {
+  max-width: 150px;
+  -webkit-transition: ease-out 0.5s;
+  transition: ease-out 0.5s;
+}
+.wrapper-main {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
 @media (max-width: 1800px) {
   .wrapper {
     padding-left: 320px;
